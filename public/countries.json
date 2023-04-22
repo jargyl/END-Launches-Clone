@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Belgium",
+    "currencies": [
+      {
+        "code": "EUR",
+        "symbol": "€",
+        "flag": "/flags/belgium.png"
+      }
+    ]
+  },
+  {
+    "name": "France",
+    "currencies": [
+      {
+        "code": "EUR",
+        "symbol": "€",
+        "flag": "/flags/france.png"
+      }
+    ]
+  },
+  {
+    "name": "Poland",
+    "currencies": [
+      {
+        "code": "PLN",
+        "symbol": "zł",
+        "flag": "/flags/poland.png"
+      }
+    ]
+  }
+]
