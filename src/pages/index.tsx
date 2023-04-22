@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner";
 import CountrySelector from "@/components/CountrySelector";
 import Header from "@/components/Header";
+import Help from "@/components/Help";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <Banner />
       <Header />
       <Navbar />
+      <Help />
     </main>
   );
 }
