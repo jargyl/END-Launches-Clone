@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { Component } from "react";
 import { MdExpandMore } from "react-icons/md";
 import CountrySelector from "./CountrySelector";
-import countries from "../../public/countries.json";
+import countries from "../../public/data/countries.json";
 
 export default class Banner extends Component {
   render() {

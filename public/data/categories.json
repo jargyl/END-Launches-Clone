@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Latest",
+    "href": "/latest",
+    "subcategoryTitle": ["View all Latest", "LATEST BRANDS", "SHOP BY"],
+    "subCategories": [
+      ["New this Week", "Latest Sneakers", "Latest Lifestyle", "Latest Kids"],
+      [
+        "Beams Plus",
+        "FDMTL",
+        "Gramicci",
+        "Harmony",
+        "Human Made",
+        "Isabel Marant",
+        "Jacquemus",
+        "KAVU",
+        "Manors Golf",
+        "Neighborhood",
+        "Taikan",
+        "WAWWA"
+      ],
+      ["Contemporary", "Gorpcore", "Streetwear"]
+    ],
+    "subImages": [
+      "https://media.endclothing.com/media/catalog/category/27-03-23_SpringMW_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/27-01-2023_Active_Editorial_Dropdown_426x262.jpg"
+    ]
+  },
+  {
+    "name": "Brands",
+    "href": "/brands",
+    "subcategoryTitle": ["View all Brands"],
+    "subCategories": [
+      [
+        "Bathing Ape",
+        "A.P.C.",
+        "Acne Studios",
+        "adidas",
+        "Alexander McQueen",
+        "AMIRI",
+        "Arc'teryx",
+        "Burberry",
+        "Canada Goose",
+        "Carhartt WIP",
+        "Comme des Garçons Play",
+        "Common Projects",
+        "Givenchy",
+        "Gucci",
+        "Human Made",
+        "Kenzo",
+        "Loewe",
+        "Maison Kitsuné",
+        "Maison Margiela",
+        "Moncler",
+        "Needles",
+        "Neighborhood",
+        "New Balance",
+        "Nike",
+        "Norse Projects",
+        "Palm Angels",
+        "Patagonia",
+        "Rick Owens",
+        "Saint Laurent",
+        "Stone Island",
+        "Stussy",
+        "The North Face",
+        "Thom Browne",
+        "Valentino",
+        "VETEMENTS",
+        "Visvim",
+        "WTAPS"
+      ]
+    ],
+    "subImages": [
+      "https://media.endclothing.com/media/catalog/category/03-04-23_Loewe_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/24-03-2023_Auralee_Dropdown_426x262.jpg"
+    ]
+  },
+  {
+    "name": "Clothing",
+    "href": "/clothing",
+    "subcategoryTitle": ["View all Clothing", "CLOTHING BRANDS"],
+    "subCategories": [
+      [
+        "Coats & Jackets ",
+        "Jeans",
+        "Knitwear",
+        "Loungewear",
+        "Polo Shirts",
+        "Shirts",
+        "Shorts",
+        "Sweats",
+        "Sweat Pants",
+        "T-Shirts",
+        "Trousers"
+      ],
+      [
+        "A.P.C.",
+        "Acne Studio ",
+        "Carhartt WIP",
+        "Homme Plissé Issey Miyake",
+        "Jil Sander",
+        "Loewe",
+        "Moncler",
+        "Neighborhood",
+        "Represent",
+        "Stone Island",
+        "Story mfg.",
+        "WTAPS"
+      ]
+    ],
+    "subImages": [
+      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+    ]
+  },
+  {
+    "name": "Footwear",
+    "href": "/footwear",
+    "subcategoryTitle": ["View all Footwear", "FOOTWEAR BRANDS"],
+    "subCategories": [
+      [
+        "Sneakers",
+        "Boots",
+        "Casual Shoes",
+        "Luxury Sneakers",
+        "Sandals & Slides",
+        "Shoes",
+        "Shoe Care & Accessories",
+        "Slippers"
+      ],
+      [
+        "adidas",
+        "Alexander McQueen",
+        "Asics",
+        "Axel Arigato",
+        "Clarks Originals",
+        "Crocs",
+        "HOKA ONE ONE",
+        "KEEN",
+        "New Balance",
+        "Nike",
+        "Salomon",
+        "Vans"
+      ]
+    ],
+    "subImages": [
+      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+    ]
+  },
+  {
+    "name": "Accessories",
+    "href": "/accessories",
+    "subcategoryTitle": ["View all Accessories", "ACCESSORIES BRANDS"],
+    "subCategories": [
+      [
+        "Bags",
+        "Belts",
+        "Hats",
+        "Jewellery",
+        "Socks",
+        "Sunglasses",
+        "Masks",
+        "Pet Care",
+        "Scarves & Gloves",
+        "Wallets & Keychains",
+        "Umbrellas",
+        "Watches"
+      ],
+      [
+        "AKILA",
+        "Bleue Burnham",
+        "Floyd",
+        "Gentle Monster",
+        "Gucci Jewellery",
+        "Hatton Labs",
+        "Jacques Marie Mage",
+        "Master-Piece",
+        "Porter-Yoshida & Co.",
+        "Prada Eyewear",
+        "RoToTo",
+        "Tom Wood"
+      ]
+    ],
+    "subImages": [
+      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+    ]
+  },
+  {
+    "name": "Lifestyle",
+    "href": "/lifestyle",
+    "subcategoryTitle": [
+      "View all Lifestyle",
+      "SHOP BY ROOM",
+      "BRAND HIGHLIGHTS"
+    ],
+    "subCategories": [
+      [
+        "Bestsellers",
+        "Ceramics",
+        "Face & Body",
+        "Glassware",
+        "Home Decoration",
+        "Home Fragrance",
+        "Lighting",
+        "Perfume & Fragrance",
+        "Publications",
+        "Soft Furnishings",
+        "Storage & Organisers",
+        "Tableware",
+        "Tech & Audio"
+      ],
+      [
+        "Kitchen & Dining",
+        "Living Room",
+        "Bedroom",
+        "Bathroom",
+        "Home Office",
+        "Outdoor Living"
+      ],
+      [
+        "Aesop",
+        "Artek",
+        "Byredo",
+        "Brutes Ceramics",
+        "Comme des Garçons Parfums",
+        "ferm LIVING",
+        "HAY",
+        "Liam Owen",
+        "Malin + Goetz",
+        "Mr Maria",
+        "The Conran Shop",
+        "Vitra"
+      ]
+    ],
+    "subImages": [
+      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+    ]
+  },
+  {
+    "name": "Sale",
+    "href": "/sale",
+    "subcategoryTitle": ["View all Sale", "BRANDS", "DISCOUNT"],
+    "subCategories": [
+      [
+        "All Sale Clothing",
+        "Coats & Jackets",
+        "Knitwear",
+        "Trousers",
+        "Tops",
+        "All Sale Footwear",
+        "Boots",
+        "Sneakers",
+        "All Sale Accessories",
+        "Bags & Wallets",
+        "Jewellery",
+        "All Sale Lifestyle"
+      ],
+      [
+        "A.P.C.",
+        "Acne Studios",
+        "adidas",
+        "Alexander McQueen",
+        "AMIRI",
+        "C.P. Company",
+        "Carhartt WIP",
+        "Kenzo",
+        "Maison Margiela",
+        "Nike",
+        "Palm Angels",
+        "Polo Ralph Lauren"
+      ],
+      [
+        "Up to 30% off",
+        "Up to 40% off",
+        "Up to 50% off",
+        "Up to 60% Off",
+        "Over 60% off"
+      ]
+    ],
+    "subImages": [
+      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+    ]
+  },
+  {
+    "name": "Launches",
+    "href": "/launches",
+    "subcategoryTitle": ["View all Launches"],
+    "subCategories": [["Subcategory 1", "Subcategory 2", "Subcategory 3"]],
+    "subImages": [
+      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+    ]
+  },
+  {
+    "name": "Features",
+    "href": "/features",
+    "subcategoryTitle": ["View all Features"],
+    "subCategories": [["Subcategory 1", "Subcategory 2", "Subcategory 3"]],
+    "subImages": [
+      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+    ]
+  }
+]
