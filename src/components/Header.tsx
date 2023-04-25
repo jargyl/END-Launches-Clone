@@ -48,7 +48,7 @@ export default class Header extends Component<{}, HeaderState> {
               WOMEN
             </a>
           </div>
-          <h1 className="absolute left-1/2 translate-x-[-50%] text-3xl font-extrabold cursor-pointer select-none">
+          <h1 className="absolute left-1/2 translate-x-[-50%] text-3xl  cursor-pointer select-none">
             END.
           </h1>
           <CgProfile className="text-lg cursor-pointer" />

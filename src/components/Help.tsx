@@ -25,7 +25,7 @@ export default class HelpButton extends Component<{}, HelpButtonState> {
     return (
       <div className="fixed bottom-4 right-4">
         <button
-          className="bg-black text-white font-bold py-2 px-4 rounded-full flex gap-2 border-[3.5px] border-gray-600"
+          className="bg-black text-white  py-2 px-4 rounded-full flex gap-2 border-[3.5px] border-gray-600"
           onClick={this.toggleHelpDialog}
         >
           <AiOutlineQuestionCircle size={24} />
@@ -37,7 +37,7 @@ export default class HelpButton extends Component<{}, HelpButtonState> {
           }`}
         >
           <div className="bg-black flex justify-center items-center relative">
-            <p className="font-bold py-3 text-white">Help</p>
+            <p className=" py-3 text-white">Help</p>
             <VscChromeMinimize
               className="text-white flex-1 absolute right-3 text-lg cursor-pointer"
               onClick={this.toggleHelpDialog}
