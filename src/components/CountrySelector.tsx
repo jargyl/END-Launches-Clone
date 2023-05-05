@@ -78,7 +78,7 @@ export default class CountrySelector extends Component<
         <div
           className={`${
             isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
-          } transition-opacity duration-300 w-72 absolute top-10 left-0 z-50 bg-white shadow-2xl text-[12px]`}
+          } transition-opacity duration-300 w-72 absolute top-10 left-0 z-50 bg-white shadow-2xl text-black text-[12px]`}
         >
           <div className="flex justify-center items-center">
             <h1 className="p-5  text-[14px]">SHIPPING COUNTRY</h1>
@@ -87,9 +87,9 @@ export default class CountrySelector extends Component<
             <div className="bg-gray-100 border-[1px] border-gray-200 p-5">
               <p className="mb-5">
                 You are currently shipping to{" "}
-                <span className="">{selectedCountry.name}</span> and your order
+                <span className="font-bold">{selectedCountry.name}</span> and your order
                 will be billed in{" "}
-                <span className="">
+                <span className="font-bold">
                   {selectedCountry.currencies[0].code}{" "}
                   {selectedCountry.currencies[0].symbol}
                 </span>
@@ -124,8 +124,8 @@ export default class CountrySelector extends Component<
                     width={12}
                     height={12}
                   />
-                  <p className="mt-0.5">{country.name}</p>
-                  <p className="ml-auto">
+                  <p>{country.name}</p>
+                  <p className="ml-auto text-gray-400 font-bold">
                     {country.currencies[0].code} {country.currencies[0].symbol}
                   </p>
                 </div>

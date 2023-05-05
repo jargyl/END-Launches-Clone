@@ -29,10 +29,10 @@
   {
     "name": "Brands",
     "href": "/brands",
-    "subcategoryTitle": ["View all Brands"],
+    "subcategoryTitle": ["View all Brands", "", ""],
     "subCategories": [
       [
-        "Bathing Ape",
+        "A Bathing Ape",
         "A.P.C.",
         "Acne Studios",
         "adidas",
@@ -44,7 +44,9 @@
         "Carhartt WIP",
         "Comme des Garçons Play",
         "Common Projects",
-        "Givenchy",
+        "Givenchy"
+      ],
+      [
         "Gucci",
         "Human Made",
         "Kenzo",
@@ -57,7 +59,9 @@
         "New Balance",
         "Nike",
         "Norse Projects",
-        "Palm Angels",
+        "Palm Angels"
+      ],
+      [
         "Patagonia",
         "Rick Owens",
         "Saint Laurent",
@@ -110,7 +114,9 @@
       ]
     ],
     "subImages": [
-      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg",
+      "https://media.endclothing.com/media/catalog/category/24-03-2023_Auralee_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/24-03-2023_Auralee_Dropdown_426x262.jpg"
     ]
   },
   {
