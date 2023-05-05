@@ -21,6 +21,7 @@
       ],
       ["Contemporary", "Gorpcore", "Streetwear"]
     ],
+    "subImageTitles": ["Contemporary", "Gorpcore"],
     "subImages": [
       "https://media.endclothing.com/media/catalog/category/27-03-23_SpringMW_Dropdown_426x262.jpg",
       "https://media.endclothing.com/media/catalog/category/27-01-2023_Active_Editorial_Dropdown_426x262.jpg"
@@ -75,9 +76,10 @@
         "WTAPS"
       ]
     ],
+    "subImageTitles": ["Acne Studios", "Ambush"],
     "subImages": [
-      "https://media.endclothing.com/media/catalog/category/03-04-23_Loewe_Dropdown_426x262.jpg",
-      "https://media.endclothing.com/media/catalog/category/24-03-2023_Auralee_Dropdown_426x262.jpg"
+      "https://media.endclothing.com/media/catalog/category/15-03-23_Acne_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/15-03-23_Ambush_Dropdown_426x262.jpg"
     ]
   },
   {
@@ -113,10 +115,17 @@
         "WTAPS"
       ]
     ],
+    "subImageTitles": [
+      "Wales Bonner",
+      "VETEMENTS",
+      "Our Legacy",
+      "Jill Sander"
+    ],
     "subImages": [
-      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg",
-      "https://media.endclothing.com/media/catalog/category/24-03-2023_Auralee_Dropdown_426x262.jpg",
-      "https://media.endclothing.com/media/catalog/category/24-03-2023_Auralee_Dropdown_426x262.jpg"
+      "https://media.endclothing.com/media/catalog/category/16-03-23_WalesBonner_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/20-02-23_vetements_Dropdown_426x262_1.jpg",
+      "https://media.endclothing.com/media/catalog/category/21-03-2023_OurLegacy_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/16-03-2023_JilSanders_Dropdown_426x262.jpg"
     ]
   },
   {
@@ -149,8 +158,12 @@
         "Vans"
       ]
     ],
+    "subImageTitles": ["Veja", "Suicoke", "Salomon", "Rick Owens"],
     "subImages": [
-      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+      "https://media.endclothing.com/media/catalog/category/06-02-23_Veja_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/14-04-23_Suicoke_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/15-12-2022_Salomon_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/06-04-23_RickOwens_Dropdown_426x262.jpg"
     ]
   },
   {
@@ -187,8 +200,17 @@
         "Tom Wood"
       ]
     ],
+    "subImageTitles": [
+      "Palm Angels",
+      "Bottega Veneta Eyewear",
+      "Yvonne Leon",
+      "Gucci Jewellery"
+    ],
     "subImages": [
-      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+      "https://media.endclothing.com/media/catalog/category/17-04-2023_PalmAngels_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/14-04-23_Bottega_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/23-02-23_YvonneLe_on_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/14-04-23_Gucci_Dropdown_426x262.jpg"
     ]
   },
   {
@@ -238,8 +260,10 @@
         "Vitra"
       ]
     ],
+    "subImageTitles": ["Ferm LIVING", "Byredo"],
     "subImages": [
-      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+      "https://media.endclothing.com/media/catalog/category/15-02-23_FernLiving_Dropdown_426x262.jpg",
+      "https://media.endclothing.com/media/catalog/category/28-03-23_Byredo_Dropdown_426x262.jpg"
     ]
   },
   {
@@ -283,8 +307,10 @@
         "Over 60% off"
       ]
     ],
+    "subImageTitles": ["Sale Tops", "Sale Knitwear"],
     "subImages": [
-      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
+      "https://media.endclothing.com/media/catalog/category/MicrosoftTeams-image_7_.png",
+      "https://media.endclothing.com/media/catalog/category/08-08-22_Sunnei_Dropdown_426x262_1.jpg"
     ]
   },
   {
@@ -292,6 +318,7 @@
     "href": "/launches",
     "subcategoryTitle": ["View all Launches"],
     "subCategories": [["Subcategory 1", "Subcategory 2", "Subcategory 3"]],
+    "subImageTitles": ["Shop by Category", "Shop by Brand"],
     "subImages": [
       "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
     ]
@@ -301,6 +328,7 @@
     "href": "/features",
     "subcategoryTitle": ["View all Features"],
     "subCategories": [["Subcategory 1", "Subcategory 2", "Subcategory 3"]],
+    "subImageTitles": ["Shop by Category", "Shop by Brand"],
     "subImages": [
       "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
     ]

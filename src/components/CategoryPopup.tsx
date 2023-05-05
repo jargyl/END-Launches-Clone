@@ -35,9 +35,17 @@ export default class CategoryPopup extends Component<Props> {
           </div>
           <div>
             <p className="mb-5 font-bold">FEATURED</p>
-            {category.subImages.map((imagePath, index) => (
-              <img key={index} src={imagePath} className="h-44" />
-            ))}
+            {category.subImages.length === 4 ? (
+              <div className="grid grid-cols-2 gap-5">
+                {category.subImages.map((imagePath, index) => (
+                  <img key={index} src={imagePath} className="h-44" />
+                ))}
+              </div>
+            ) : (
+              category.subImages.map((imagePath, index) => (
+                <img key={index} src={imagePath} className="h-44 mb-5" />
+              ))
+            )}
           </div>
         </div>
       </div>
