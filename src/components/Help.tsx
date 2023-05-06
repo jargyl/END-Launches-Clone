@@ -25,11 +25,11 @@ export default class HelpButton extends Component<{}, HelpButtonState> {
     return (
       <div className="fixed bottom-4 right-4">
         <button
-          className="bg-black text-white  py-2 px-4 rounded-full flex gap-2 border-[3.5px] border-gray-600"
+          className="bg-black text-white  py-2.5 px-4 rounded-full flex items-center gap-1.5"
           onClick={this.toggleHelpDialog}
         >
           <AiOutlineQuestionCircle size={24} />
-          <p>Help</p>
+          <p className="text-xs font-bold">Help</p>
         </button>
         <div
           className={`fixed bottom-4 right-4 w-80 bg-white border border-gray-200 rounded-lg shadow-xl transition-opacity duration-300 overflow-hidden text-[14px] ${

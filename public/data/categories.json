@@ -312,25 +312,5 @@
       "https://media.endclothing.com/media/catalog/category/MicrosoftTeams-image_7_.png",
       "https://media.endclothing.com/media/catalog/category/08-08-22_Sunnei_Dropdown_426x262_1.jpg"
     ]
-  },
-  {
-    "name": "Launches",
-    "href": "/launches",
-    "subcategoryTitle": ["View all Launches"],
-    "subCategories": [["Subcategory 1", "Subcategory 2", "Subcategory 3"]],
-    "subImageTitles": ["Shop by Category", "Shop by Brand"],
-    "subImages": [
-      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
-    ]
-  },
-  {
-    "name": "Features",
-    "href": "/features",
-    "subcategoryTitle": ["View all Features"],
-    "subCategories": [["Subcategory 1", "Subcategory 2", "Subcategory 3"]],
-    "subImageTitles": ["Shop by Category", "Shop by Brand"],
-    "subImages": [
-      "https://media.endclothing.com/media/catalog/category/Accessories_DropdownNew_426x262_0008_Gucci_eyewear.jpg"
-    ]
   }
 ]

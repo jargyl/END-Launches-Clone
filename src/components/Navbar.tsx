@@ -2,16 +2,37 @@ import Link from "next/link";
 import React, { Component } from "react";
 import CategoryPopup from "./CategoryPopup";
 import categories from "../../public/data/categories.json";
+import LaunchesPopup from "./LaunchesPopup";
+import FeaturedPopup from "./FeaturedPopup";
 
 interface NavItem {
   name: string;
   href: string;
   subcategoryTitle: string[];
   subCategories: string[][];
+  subImageTitles: string[];
   subImages: string[];
 }
 
-const navItems: NavItem[] = categories;
+const navItems: NavItem[] = [
+  ...categories,
+  {
+    name: "LAUNCHES",
+    href: "/launches",
+    subcategoryTitle: [],
+    subCategories: [],
+    subImageTitles: [],
+    subImages: [],
+  },
+  {
+    name: "FEATURED",
+    href: "/featured",
+    subcategoryTitle: [],
+    subCategories: [],
+    subImageTitles: [],
+    subImages: [],
+  },
+];
 
 interface NavbarState {
   activeIndex: number | null;
@@ -45,7 +66,7 @@ export default class Navbar extends Component<{}, NavbarState> {
             >
               <a
                 href={item.href}
-                className={`${
+                className={`uppercase font-[500] ${
                   activeIndex === null || activeIndex === index
                     ? "text-black"
                     : "text-gray-400"
@@ -55,7 +76,13 @@ export default class Navbar extends Component<{}, NavbarState> {
               </a>
               {activeIndex === index && (
                 <div className="absolute top-full left-0 w-full shadow-lg bg-white py-4 border-t">
-                  <CategoryPopup category={item} />
+                  {item.name === "LAUNCHES" ? (
+                    <LaunchesPopup />
+                  ) : item.name === "FEATURED" ? (
+                    <FeaturedPopup />
+                  ) : (
+                    <CategoryPopup category={item} />
+                  )}
                 </div>
               )}
             </li>

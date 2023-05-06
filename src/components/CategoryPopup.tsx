@@ -5,6 +5,7 @@ interface Props {
     name: string;
     subcategoryTitle: string[];
     subCategories: string[][];
+    subImageTitles: string[];
     subImages: string[];
   };
 }
@@ -15,12 +16,12 @@ export default class CategoryPopup extends Component<Props> {
 
     return (
       <div className="w-full max-w-screen-lg mx-auto">
-        <div className="flex justify-between h-96 overflow-hidden">
+        <div className="flex justify-between h-[29rem] overflow-hidden">
           <div className="flex justify-between">
             {category.subCategories.map((subCategoryGroup, groupIndex) => (
               <div
                 key={groupIndex}
-                className="flex flex-col flex-wrap mb-2 mr-12 w-32"
+                className="flex flex-col flex-wrap mb-2 mr-20 w-32"
               >
                 <p className="font-bold absolute">
                   {category.subcategoryTitle[groupIndex]}
@@ -38,12 +39,18 @@ export default class CategoryPopup extends Component<Props> {
             {category.subImages.length === 4 ? (
               <div className="grid grid-cols-2 gap-5">
                 {category.subImages.map((imagePath, index) => (
-                  <img key={index} src={imagePath} className="h-44" />
+                  <div key={index} className="flex flex-col">
+                    <img src={imagePath} className="h-44" />
+                    <p className="mt-2">{category.subImageTitles[index]}</p>
+                  </div>
                 ))}
               </div>
             ) : (
               category.subImages.map((imagePath, index) => (
-                <img key={index} src={imagePath} className="h-44 mb-5" />
+                <div key={index} className="flex flex-col mb-5">
+                  <img src={imagePath} className="h-40" />
+                  <p className="mt-2">{category.subImageTitles[index]}</p>
+                </div>
               ))
             )}
           </div>
