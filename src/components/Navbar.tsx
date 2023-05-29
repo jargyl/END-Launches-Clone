@@ -75,7 +75,7 @@ export default class Navbar extends Component<{}, NavbarState> {
                 {item.name}
               </a>
               {activeIndex === index && (
-                <div className="absolute top-full left-0 w-full shadow-lg bg-white py-4 border-t">
+                <div className="absolute top-full left-0 w-full shadow-lg bg-white py-4 border-t z-50">
                   {item.name === "LAUNCHES" ? (
                     <LaunchesPopup />
                   ) : item.name === "FEATURED" ? (

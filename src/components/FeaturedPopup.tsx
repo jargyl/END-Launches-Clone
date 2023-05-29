@@ -17,12 +17,12 @@ export default class FeaturedPopup extends Component {
       <div className="w-full max-w-screen-lg mx-auto">
         <div className="flex justify-between h-[29rem] overflow-hidden">
           <div>
-            <p className="font-bold absolute">
+            <p className="font-bold absolute cursor-pointer">
               {featuresData.subcategoryTitle}
             </p>
             <div className="flex flex-col">
               {featuresData.subCategories.map((subCategory, index) => (
-                <div key={index} className="mb-2 relative top-8">
+                <div key={index} className="mb-2 relative top-8 cursor-pointer">
                   {subCategory}
                 </div>
               ))}
@@ -35,9 +35,9 @@ export default class FeaturedPopup extends Component {
                   <img
                     src={featuresData.subImages[index]}
                     alt={featuresData.subImageTitles[index]}
-                    className="w-full h-48 object-cover"
+                    className="w-full h-48 object-cover cursor-pointer"
                   />
-                  <div className="absolute bottom-0 w-full bg-black bg-opacity-50 py-2 px-2">
+                  <div className="absolute bottom-0 w-full bg-black bg-opacity-50 py-2 px-2 cursor-pointer">
                     <div className="text-white uppercase text-xs">
                       {category}
                     </div>

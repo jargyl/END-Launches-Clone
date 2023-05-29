@@ -16,7 +16,7 @@ export default class LaunchesPopup extends Component {
   render() {
     return (
       <div className="w-full max-w-screen-lg mx-auto">
-        <p className="font-bold absolute">View upcoming releases</p>
+        <p className="font-bold absolute cursor-pointer">View upcoming releases</p>
         <SimpleBarReact className="max-h-full h-[29rem] pt-6 absolute">
           <div className="flex flex-wrap justify-between">
             {launchesData.map((launch, index) => (
@@ -24,9 +24,9 @@ export default class LaunchesPopup extends Component {
                 <img
                   src={launch.image}
                   alt={launch.model}
-                  className="w-3/5 mr-4"
+                  className="w-3/5 mr-4 cursor-pointer"
                 />
-                <div>
+                <div className="cursor-pointer">
                   <p className="pb-1">{launch.model}</p>
                   <p className="text-gray-500 pb-1">{launch.colorway}</p>
                   <p>{launch.release_date}</p>
