@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Help from "@/components/Help";
 import Navbar from "@/components/Navbar";
 import Carousel from "@/components/Carousel";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <Header />
       <Navbar />
       <Carousel />
-
+      <Footer />
       <Help />
     </main>
   );

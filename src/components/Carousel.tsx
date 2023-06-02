@@ -61,7 +61,7 @@ class Carousel extends Component<{}, CarouselState> {
 
     return (
       <div className="relative">
-        <Slider {...settings} ref={this.sliderRef} initialSlide={activeSlide}>
+        <Slider {...settings} ref={this.sliderRef}>
           {carouselData.map((item, i) => (
             <div key={i} className="relative">
               <img
