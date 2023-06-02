@@ -1,5 +1,6 @@
 import React, { Component, ChangeEvent } from "react";
 import { FiFacebook, FiInstagram, FiTwitter } from "react-icons/fi";
+import { BiCreditCard } from "react-icons/bi";
 
 interface FooterState {
   email: string;
@@ -66,8 +67,44 @@ export default class Footer extends Component<{}, FooterState> {
           </div>
         </div>
         <div className="border-t-2 w-full">
-          <div className="max-w-screen-lg mx-auto px-4">
-            <div className="flex justify-between">d</div>
+          <div className="max-w-screen-lg mx-auto">
+            <div className="flex justify-between my-14 h-44">
+              <div>
+                <p className="text-sm font-[500] mb-3">ABOUT</p>
+                <p className="text-sm mb-2">Our Purpose</p>
+                <p className="text-sm mb-2">Careers</p>
+                <p className="text-sm mb-2">Affiliates</p>
+                <p className="text-sm mb-2">Press</p>
+                <p className="text-sm mb-2">Stores</p>
+              </div>
+              <div>
+                <p className="text-sm font-[500] mb-3">CUSTOMER SERVICE</p>
+                <p className="text-sm mb-2">Help</p>
+                <p className="text-sm mb-2">Shipping</p>
+                <p className="text-sm mb-2">Returns</p>
+                <p className="text-sm mb-2">Payments</p>
+                <p className="text-sm mb-2">Your Order</p>
+              </div>
+              <div>
+                <p className="text-sm font-[500] mb-3">CONTACT US</p>
+                <p className="text-sm mb-2">+44 (0)333 323 7728</p>
+                <p className="text-sm mb-2">Email us</p>
+              </div>
+              <div>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="bg-black text-white rounded-lg h-10 w-10 flex items-center justify-center">
+                    <p className="text-xs font-bold"> END.</p>
+                  </div>
+                  <p className="text-sm font-[500] ml-2">Our Apps</p>
+                </div>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="border rounded-lg h-10 w-10 flex items-center justify-center">
+                    <BiCreditCard className="text-xl" />
+                  </div>
+                  <p className="text-sm font-[500] ml-2">Gift Cards</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="border-t-2 w-full">
