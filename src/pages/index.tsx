@@ -4,6 +4,7 @@ import Help from "@/components/Help";
 import Navbar from "@/components/Navbar";
 import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
+import LaunchesOverview from "@/components/LaunchesOverview";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Navbar />
       <Carousel />
+      <LaunchesOverview />
       <Footer />
       <Help />
     </main>
