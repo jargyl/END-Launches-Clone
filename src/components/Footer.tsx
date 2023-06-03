@@ -108,8 +108,26 @@ export default class Footer extends Component<{}, FooterState> {
           </div>
         </div>
         <div className="border-t-2 w-full">
-          <div className="max-w-screen-lg mx-auto px-4">
-            <div className="flex justify-between">f</div>
+          <div className="max-w-screen-lg mx-auto">
+            <div className="flex justify-between h-44">
+              <div className="flex items-center gap-5">
+                <p className="text-xl font-bold">END.</p>
+                <p className="text-xs">Terms & Conditions</p>
+                <p className="text-xs">Privacy Policy</p>
+                <p className="text-xs">Other Policies</p>
+              </div>
+              <div className="flex items-center gap-5">
+                <img src="payment/visa.png" alt="visa" className="h-4" />
+                <img
+                  src="payment/mastercard.png"
+                  alt="mastercard"
+                  className="h-4"
+                />
+                <img src="payment/amex.png" alt="amex" className="h-4" />
+                <img src="payment/paypal.png" alt="paypal" className="h-4" />
+                <img src="payment/jcb.png" alt="jcb" className="h-4" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
