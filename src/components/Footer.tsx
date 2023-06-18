@@ -27,7 +27,7 @@ export default class Footer extends Component<{}, FooterState> {
       <div className="flex flex-col items-center">
         <div className="border-t-2 w-full">
           <div className="max-w-screen-2xl mx-auto">
-            <div className="flex justify-between mt-16 h-44">
+            <div className="flex justify-between mt-16 mx-5 h-44">
               <div>
                 <p className="font-[500] text-xl mb-8">
                   SIGN UP TO THE END. MENSWEAR MAILING LIST
@@ -68,7 +68,7 @@ export default class Footer extends Component<{}, FooterState> {
         </div>
         <div className="border-t-2 w-full">
           <div className="max-w-screen-2xl mx-auto">
-            <div className="flex justify-between my-14 h-44">
+            <div className="flex justify-between my-14 mx-5 h-44">
               <div>
                 <p className="text-sm font-[500] mb-3">ABOUT</p>
                 <p className="text-sm mb-2">Our Purpose</p>
@@ -109,7 +109,7 @@ export default class Footer extends Component<{}, FooterState> {
         </div>
         <div className="border-t-2 w-full">
           <div className="max-w-screen-2xl mx-auto">
-            <div className="flex justify-between h-44">
+            <div className="flex justify-between mx-5 h-44">
               <div className="flex items-center gap-5">
                 <p className="text-xl font-bold">END.</p>
                 <p className="text-xs">Terms & Conditions</p>
