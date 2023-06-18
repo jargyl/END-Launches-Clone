@@ -14,7 +14,7 @@ const featuresData: Feature = features;
 export default class FeaturedPopup extends Component {
   render() {
     return (
-      <div className="w-full max-w-screen-lg mx-auto">
+      <div className="w-full max-w-screen-2xl mx-auto">
         <div className="flex justify-between h-[29rem] overflow-hidden">
           <div>
             <p className="font-bold absolute cursor-pointer">

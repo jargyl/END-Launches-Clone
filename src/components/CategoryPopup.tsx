@@ -15,7 +15,7 @@ export default class CategoryPopup extends Component<Props> {
     const { category } = this.props;
 
     return (
-      <div className="w-full max-w-screen-lg mx-auto">
+      <div className="w-full max-w-screen-2xl mx-auto">
         <div className="flex justify-between h-[29rem] overflow-hidden">
           <div className="flex justify-between">
             {category.subCategories.map((subCategoryGroup, groupIndex) => (

@@ -26,7 +26,7 @@ export default class Footer extends Component<{}, FooterState> {
     return (
       <div className="flex flex-col items-center">
         <div className="border-t-2 w-full">
-          <div className="max-w-screen-lg mx-auto">
+          <div className="max-w-screen-2xl mx-auto">
             <div className="flex justify-between mt-16 h-44">
               <div>
                 <p className="font-[500] text-xl mb-8">
@@ -67,7 +67,7 @@ export default class Footer extends Component<{}, FooterState> {
           </div>
         </div>
         <div className="border-t-2 w-full">
-          <div className="max-w-screen-lg mx-auto">
+          <div className="max-w-screen-2xl mx-auto">
             <div className="flex justify-between my-14 h-44">
               <div>
                 <p className="text-sm font-[500] mb-3">ABOUT</p>
@@ -108,7 +108,7 @@ export default class Footer extends Component<{}, FooterState> {
           </div>
         </div>
         <div className="border-t-2 w-full">
-          <div className="max-w-screen-lg mx-auto">
+          <div className="max-w-screen-2xl mx-auto">
             <div className="flex justify-between h-44">
               <div className="flex items-center gap-5">
                 <p className="text-xl font-bold">END.</p>

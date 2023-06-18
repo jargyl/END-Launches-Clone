@@ -29,7 +29,7 @@ export default class Header extends Component<{}, HeaderState> {
     const { selectedLink } = this.state;
     return (
       <div className="px-5">
-        <div className="flex justify-between relative items-center py-4 font-bold w-full max-w-screen-lg mx-auto">
+        <div className="flex justify-between relative items-center py-4 font-bold w-full max-w-screen-2xl mx-auto">
           <div className="flex justify-center gap-3 text-xs text-stone-400 ">
             <a
               className={`${

@@ -8,7 +8,7 @@ export default class Banner extends Component {
   render() {
     return (
       <div className="bg-black px-5">
-        <div className="flex justify-center items-center gap-2 relative w-full max-w-screen-lg mx-auto text-[10px] px-2 py-3 text-white font-bold">
+        <div className="flex justify-center items-center gap-2 relative w-full max-w-screen-2xl mx-auto text-[10px] px-2 py-3 text-white font-bold">
           <div className="absolute left-0 flex items-center gap-1 font-[500] cursor-pointer">
             <CountrySelector countries={countries} />
           </div>

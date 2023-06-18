@@ -1,0 +1,23 @@
+[
+  {
+    "model": "Adidas x Sporty & Rich Samba OG",
+    "brand": "Adidas",
+    "release_date": "02/03/2023",
+    "image": "https://launches-media.endclothing.com/FJ4652-100_launches_thumbnail.jpg",
+    "retail_price": "119"
+  },
+  {
+    "model": "Air Jordan 1 Retro High OG",
+    "brand": "Nike",
+    "release_date": "02/12/2023",
+    "image": "https://launches-media.endclothing.com/DZ5485-051_launches_thumbnail.jpg",
+    "retail_price": "195"
+  },
+  {
+    "model": "Clarks x Aries Wallabee",
+    "brand": "Clarks",
+    "release_date": "02/23/2023",
+    "image": "https://launches-media.endclothing.com/26172454_launches_thumbnail.jpg",
+    "retail_price": "209"
+  }
+]

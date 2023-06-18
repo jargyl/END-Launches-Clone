@@ -15,8 +15,10 @@ const launchesData: Launch[] = launches;
 export default class LaunchesPopup extends Component {
   render() {
     return (
-      <div className="w-full max-w-screen-lg mx-auto">
-        <p className="font-bold absolute cursor-pointer">View upcoming releases</p>
+      <div className="w-full max-w-screen-2xl mx-auto">
+        <p className="font-bold absolute cursor-pointer">
+          View upcoming releases
+        </p>
         <SimpleBarReact className="max-h-full h-[29rem] pt-6 absolute">
           <div className="flex flex-wrap justify-between">
             {launchesData.map((launch, index) => (
