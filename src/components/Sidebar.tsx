@@ -1,13 +1,52 @@
 import React, { Component } from "react";
+import { MdClose } from "react-icons/md";
+import SidebarNavigation from "./SidebarNavigation";
 
 interface SidebarProps {
   isOpen: boolean;
   toggleSidebar: () => void;
 }
 
-class Sidebar extends Component<SidebarProps> {
+type SidebarState = {
+  selectedLink: string;
+  isMobile: boolean;
+};
+
+class Sidebar extends Component<SidebarProps, SidebarState> {
+  constructor(props: SidebarProps) {
+    super(props);
+    this.state = {
+      selectedLink: "men",
+      isMobile: false,
+    };
+  }
+
+  componentDidMount() {
+    const storedGender = localStorage.getItem("selectedLink");
+    if (storedGender) {
+      this.setState({ selectedLink: storedGender });
+    }
+
+    this.handleResize();
+    window.addEventListener("resize", this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  }
+
+  handleLinkClick = (link: string) => {
+    this.setState({ selectedLink: link });
+    localStorage.setItem("selectedLink", link);
+  };
+
+  handleResize = () => {
+    this.setState({ isMobile: window.innerWidth < 500 });
+  };
+
   render() {
     const { isOpen, toggleSidebar } = this.props;
+    const { selectedLink, isMobile } = this.state;
 
     return (
       <div
@@ -18,7 +57,9 @@ class Sidebar extends Component<SidebarProps> {
         }`}
       >
         <div
-          className={`fixed left-0 top-0 h-full w-64 bg-white transform transition-transform ${
+          className={`fixed left-0 top-0 h-full ${
+            isMobile ? "w-full" : "w-[22rem]"
+          }  bg-white transform transition-transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -26,14 +67,40 @@ class Sidebar extends Component<SidebarProps> {
             className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
             onClick={toggleSidebar}
           >
-            Close
+            <MdClose />
           </button>
-          {/* Sidebar content */}
-          <ul className="p-8">
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
+
+          <div className="flex justify-center items-center h-12">
+            <h1 className="text-2xl cursor-pointer select-none">END.</h1>
+          </div>
+
+          <div className="flex flex-col justify-center items-center">
+            <div className="flex w-full h-14 justify-center text-xs border-[1px]">
+              <div
+                className={`${
+                  selectedLink === "men"
+                    ? "bg-white"
+                    : "bg-slate-100 text-gray-600 shadow-inner"
+                } flex items-center justify-center w-full border-r-[1px] cursor-pointer`}
+                onClick={() => this.handleLinkClick("men")}
+              >
+                <a>MEN</a>
+              </div>
+              <div
+                className={`${
+                  selectedLink === "women"
+                    ? "bg-white"
+                    : "bg-slate-100 text-gray-600 shadow-inner"
+                } flex items-center justify-center w-full cursor-pointer`}
+                onClick={() => this.handleLinkClick("women")}
+              >
+                <a>WOMEN</a>
+              </div>
+            </div>
+
+            {/* Sidebar content */}
+            <SidebarNavigation />
+          </div>
         </div>
       </div>
     );

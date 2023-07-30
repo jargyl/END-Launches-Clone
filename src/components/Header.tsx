@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { CgProfile } from "react-icons/cg";
+import { AiOutlineMenu } from "react-icons/ai";
 import Sidebar from "./Sidebar";
 
 type HeaderState = {
@@ -54,7 +55,7 @@ export default class Header extends Component<{}, HeaderState> {
         <div className="flex justify-between relative items-center py-4 font-bold w-full max-w-screen-2xl mx-auto h-12">
           {isMobile && (
             <>
-              <button onClick={this.toggleSidebar}>Toggle Sidebar</button>
+              <button onClick={this.toggleSidebar}><AiOutlineMenu/></button>
               <Sidebar
                 isOpen={isSidebarOpen}
                 toggleSidebar={this.toggleSidebar}
