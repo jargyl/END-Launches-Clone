@@ -6,7 +6,6 @@ import Carousel from "@/components/Carousel";
 import Footer from "@/components/Footer";
 import LaunchesOverview from "@/components/LaunchesOverview";
 import { useEffect, useState } from "react";
-import Sidebar from "@/components/Sidebar";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);

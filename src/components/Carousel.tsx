@@ -7,6 +7,7 @@ import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 
 interface CarouselState {
   activeSlide: number;
+  isMobile: boolean;
 }
 
 class Carousel extends Component<{}, CarouselState> {
@@ -16,8 +17,22 @@ class Carousel extends Component<{}, CarouselState> {
     super(props);
     this.state = {
       activeSlide: 0,
+      isMobile: false,
     };
   }
+
+  componentDidMount() {
+    this.handleResize();
+    window.addEventListener("resize", this.handleResize);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.handleResize);
+  }
+
+  handleResize = () => {
+    this.setState({ isMobile: window.innerWidth < 768 });
+  };
 
   handleSlideChange = (nextSlide: number) => {
     this.setState({
@@ -44,7 +59,7 @@ class Carousel extends Component<{}, CarouselState> {
   };
 
   render() {
-    const { activeSlide } = this.state;
+    const { activeSlide, isMobile } = this.state;
     const images = Array.from(Array(carouselData.length).keys());
 
     const settings = {
@@ -69,22 +84,47 @@ class Carousel extends Component<{}, CarouselState> {
                 className="w-full h-[80vh] object-cover"
                 alt={`Banner ${i + 1}`}
               />
-              <div className="absolute left-0 bottom-0 w-full pt-24 bg-gradient-to-t from-black to-transparent h-3/5">
-                <div className="absolute bottom-16 left-20">
-                  <h2 className="text-white text-4xl font-bold mb-4 uppercase">
+
+              <div
+                className={`${
+                  isMobile
+                    ? "left-1/2 transform -translate-x-1/2 text-center"
+                    : "left-0"
+                } absolute bottom-0 w-full pt-24 bg-gradient-to-t from-black to-transparent h-3/5`}
+              >
+                <div
+                  className={`${
+                    isMobile
+                      ? "bottom-20 left-1/2 transform -translate-x-1/2"
+                      : "bottom-16 left-20"
+                  } absolute w-full  `}
+                >
+                  <h2 className="text-white text-xl md:text-4xl font-bold mb-1 md:mb-4 uppercase">
                     {item.title}
                   </h2>
                   <p className="text-white text-lg mb-8">{item.description}</p>
                 </div>
               </div>
 
-              <button className="absolute right-20 bottom-20 text-white px-12 py-2 rounded-sm hover:bg-white hover:text-black border-2 transition-colors duration-300">
+              <button
+                className={`${
+                  isMobile
+                    ? "bottom-14 left-1/2 transform -translate-x-1/2 px-4"
+                    : "bottom-20 right-20 px-12"
+                }   absolute  text-white  py-2 rounded-sm hover:bg-white hover:text-black border-2 transition-colors duration-300`}
+              >
                 {item.btn_text}
               </button>
             </div>
           ))}
         </Slider>
-        <div className="absolute bottom-20 left-20 flex justify-start mt-4">
+        <div
+          className={`${
+            isMobile
+              ? "bottom-10 left-1/2 transform -translate-x-1/2"
+              : "bottom-20 left-20"
+          } absolute flex justify-start mt-4`}
+        >
           {images.map((_, i) => (
             <div
               key={i}

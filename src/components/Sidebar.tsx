@@ -9,7 +9,6 @@ interface SidebarProps {
 
 type SidebarState = {
   selectedLink: string;
-  isMobile: boolean;
 };
 
 class Sidebar extends Component<SidebarProps, SidebarState> {
@@ -17,7 +16,6 @@ class Sidebar extends Component<SidebarProps, SidebarState> {
     super(props);
     this.state = {
       selectedLink: "men",
-      isMobile: false,
     };
   }
 
@@ -26,13 +24,6 @@ class Sidebar extends Component<SidebarProps, SidebarState> {
     if (storedGender) {
       this.setState({ selectedLink: storedGender });
     }
-
-    this.handleResize();
-    window.addEventListener("resize", this.handleResize);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
   }
 
   handleLinkClick = (link: string) => {
@@ -40,13 +31,9 @@ class Sidebar extends Component<SidebarProps, SidebarState> {
     localStorage.setItem("selectedLink", link);
   };
 
-  handleResize = () => {
-    this.setState({ isMobile: window.innerWidth < 500 });
-  };
-
   render() {
     const { isOpen, toggleSidebar } = this.props;
-    const { selectedLink, isMobile } = this.state;
+    const { selectedLink } = this.state;
 
     return (
       <div
@@ -57,9 +44,7 @@ class Sidebar extends Component<SidebarProps, SidebarState> {
         }`}
       >
         <div
-          className={`fixed left-0 top-0 h-full ${
-            isMobile ? "w-full" : "w-[22rem]"
-          }  bg-white transform transition-transform ${
+          className={`fixed left-0 top-0 h-full w-full sm:w-[22rem] bg-white transform transition-transform ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
