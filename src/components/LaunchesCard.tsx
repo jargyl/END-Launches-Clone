@@ -16,7 +16,7 @@ export default class LaunchesCard extends Component<LaunchesCardProps> {
 
     const parsedDate = new Date(date);
     const dayNumber = parsedDate.getDate();
-    const month = parsedDate.toLocaleString("default", { month: "long" });
+    const month = parsedDate.toLocaleString("en-US", { month: "long" });
 
     return (
       <div className="relative h-[32rem] md:w-[28rem] w-full bg-gray-100 rounded m-3 p-5 flex flex-col justify-between hover:shadow-xl transition-shadow duration-200">
