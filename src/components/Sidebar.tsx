@@ -82,10 +82,8 @@ class Sidebar extends Component<SidebarProps, SidebarState> {
                 <a>WOMEN</a>
               </div>
             </div>
-
-            {/* Sidebar content */}
-            <SidebarNavigation />
           </div>
+          <SidebarNavigation />
         </div>
       </div>
     );
