@@ -44,7 +44,7 @@ export default class SideBarCategoryPopup extends Component<SidebarNavigationPro
             </p>
           </div>
 
-          <div className="flex flex-col justify-center mt-8">
+          <div className="flex flex-col justify-start py-8 pb-14 h-full overflow-y-auto">
             <p className="font-[500] pb-6 px-6">
               {category.subcategoryTitle[0]}
             </p>
