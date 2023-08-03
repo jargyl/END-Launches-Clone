@@ -215,9 +215,9 @@ export default class Footer extends Component<{}, FooterState> {
           </div>
         )}
 
-        <div className="border-t-2 w-full ">
+        <div className="border-t-2 w-full">
           <div className="max-w-screen-2xl mx-auto">
-            <div className="flex md:flex-row flex-col justify-between mx-5 mb-5 h-44">
+            <div className="flex md:flex-row flex-col justify-between mx-5 my-5 h-44 md:h-32">
               <div className="flex md:flex-row flex-col items-center gap-5">
                 <p className="text-xl font-bold">END.</p>
                 <p className="text-xs">Terms & Conditions</p>

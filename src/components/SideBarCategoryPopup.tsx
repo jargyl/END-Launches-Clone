@@ -30,10 +30,6 @@ export default class SideBarCategoryPopup extends Component<SidebarNavigationPro
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
-            <MdClose onClick={toggleSidebar} />
-          </button>
-
           <div
             className="flex items-center pl-2 h-12 border-b-[1px]"
             onClick={toggleSidebar}

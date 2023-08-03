@@ -5,6 +5,7 @@ import previous_launches from "../../public/data/previous_launches.json";
 
 export default class LaunchesOverview extends Component {
   render() {
+    let key = 0;
     return (
       <div className="w-full max-w-screen-2xl mx-auto mb-12">
         <div className="text-center mt-14 mb-6">
@@ -19,6 +20,7 @@ export default class LaunchesOverview extends Component {
               imageUrl={launch.image}
               price={launch.retail_price}
               active={true}
+              key={"A" + key++}
             />
           ))}
         </div>
@@ -34,6 +36,7 @@ export default class LaunchesOverview extends Component {
               imageUrl={launch.image}
               price={launch.retail_price}
               active={false}
+              key={"B" + key++}
             />
           ))}
         </div>

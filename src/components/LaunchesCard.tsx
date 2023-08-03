@@ -23,11 +23,23 @@ export default class LaunchesCard extends Component<LaunchesCardProps> {
         {!active && (
           <div className="absolute inset-0 bg-black opacity-30 rounded hover:opacity-0 transition-opacity duration-200" />
         )}
-        <div className="absolute bg-gray-300 h-12 rounded flex items-center">
-          <div className="h-8 w-8 ml-2 bg-white flex items-center justify-center rounded font-[600] text-sm">
+        <div
+          className={`absolute ${
+            active ? "bg-gray-300" : "bg-neutral-500"
+          }  h-12 rounded flex items-center`}
+        >
+          <div
+            className={`h-8 w-8 ml-2 ${
+              active ? "bg-white" : "bg-neutral-300"
+            }  flex items-center justify-center rounded font-[600] text-sm`}
+          >
             {dayNumber}
           </div>
-          <p className="mx-3 text-white uppercase font-[500] text-sm">
+          <p
+            className={`mx-3 ${
+              active ? "text-white" : "text-neutral-300"
+            }  uppercase font-[500] text-sm`}
+          >
             {month}
           </p>
         </div>
