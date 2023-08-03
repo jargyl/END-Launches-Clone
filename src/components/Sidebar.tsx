@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { MdClose } from "react-icons/md";
+import { MdClose, MdNavigateNext } from "react-icons/md";
 import SidebarNavigation from "./SidebarNavigation";
 
 interface SidebarProps {
@@ -83,7 +83,16 @@ class Sidebar extends Component<SidebarProps, SidebarState> {
               </div>
             </div>
           </div>
-          <SidebarNavigation />
+          <div className="h-[calc(100vh-9rem)] overflow-y-auto">
+            <SidebarNavigation />
+            <div className=" border font-[400] mx-4 text-[14px] cursor-pointer">
+              <p className="text-neutral-300 m-5">Account</p>
+              <div className="flex justify-between m-5 items-center  ">
+                <p className="">Login</p>
+                <MdNavigateNext className="text-xl" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
