@@ -16,14 +16,14 @@ export default class CategoryPopup extends Component<Props> {
 
     return (
       <div className="w-full max-w-screen-2xl mx-auto">
-        <div className="flex justify-between h-[29rem] mx-5 overflow-hidden">
+        <div className="flex justify-between h-[30rem] text-[14px] mx-20 overflow-hidden">
           <div className="flex justify-between">
             {category.subCategories.map((subCategoryGroup, groupIndex) => (
               <div
                 key={groupIndex}
-                className="flex flex-col flex-wrap mb-2 mr-20 w-32"
+                className="flex flex-col flex-wrap mb-2 mr-60 w-32"
               >
-                <p className="font-bold cursor-pointer absolute">
+                <p className="font-bold uppercase cursor-pointer absolute">
                   {category.subcategoryTitle[groupIndex]}
                 </p>
                 {subCategoryGroup.map((subCategory, index) => (

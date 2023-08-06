@@ -55,7 +55,9 @@ export default class Header extends Component<{}, HeaderState> {
         <div className="flex justify-between relative items-center py-4 font-bold w-full max-w-screen-2xl mx-auto h-12">
           {isMobile && (
             <>
-              <button onClick={this.toggleSidebar}><AiOutlineMenu/></button>
+              <button onClick={this.toggleSidebar}>
+                <AiOutlineMenu />
+              </button>
               <Sidebar
                 isOpen={isSidebarOpen}
                 toggleSidebar={this.toggleSidebar}
@@ -85,9 +87,7 @@ export default class Header extends Component<{}, HeaderState> {
           <h1 className="absolute left-1/2 translate-x-[-50%] text-3xl cursor-pointer select-none">
             END.
           </h1>
-          {!isMobile && (
-            <CgProfile className="text-lg cursor-pointer hidden md:visible" />
-          )}
+          {!isMobile && <CgProfile className="text-lg cursor-pointer" />}
         </div>
       </div>
     );

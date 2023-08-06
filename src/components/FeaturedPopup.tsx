@@ -14,10 +14,10 @@ const featuresData: Feature = features;
 export default class FeaturedPopup extends Component {
   render() {
     return (
-      <div className="w-full max-w-screen-2xl mx-auto">
-        <div className="flex justify-between h-[29rem] mx-5 overflow-hidden">
-          <div>
-            <p className="font-bold absolute cursor-pointer">
+      <div className="w-full max-w-screen-2xl text-[14px] mx-auto">
+        <div className="flex justify-between h-[30rem] mx-5 overflow-hidden">
+          <div className="mr-4">
+            <p className="font-bold uppercase absolute cursor-pointer">
               {featuresData.subcategoryTitle}
             </p>
             <div className="flex flex-col">
@@ -35,7 +35,7 @@ export default class FeaturedPopup extends Component {
                   <img
                     src={featuresData.subImages[index]}
                     alt={featuresData.subImageTitles[index]}
-                    className="w-full h-48 object-cover cursor-pointer"
+                    className="w-full h-56 object-cover cursor-pointer"
                   />
                   <div className="absolute bottom-0 w-full bg-black bg-opacity-50 py-2 px-2 cursor-pointer">
                     <div className="text-white uppercase text-xs">
