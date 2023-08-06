@@ -3,7 +3,7 @@
 This repository contains a clone of the [ENDClothing Launches page](https://launches.endclothing.com/) , which showcases the latest new releases of clothing and footwear. The clone is built using Next.js and styled using Tailwind CSS.
 
 ## Live Demo
-You can check out the live demo of the clone at https://your-demo-url.com.
+You can check out the live demo of the clone at https://end-launches-clone.vercel.app/.
 
 ## Technologies Used
 - Next.js: A React framework for building server-side rendered applications.
@@ -27,3 +27,9 @@ npm install
 npm run dev
 ```
 4. Open your browser and navigate to `http://localhost:3000` to see the clone in action.
+
+## Screenshots
+### Desktop View
+![Desktop](https://i.imgur.com/LKnnbyq.png "Desktop")
+### Mobile View
+![Mobile](https://i.imgur.com/Ij4yODd.png "Mobile")
